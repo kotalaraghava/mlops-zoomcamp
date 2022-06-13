@@ -58,7 +58,7 @@ We want to bring this to workflow orchestration to add observability around it. 
 
 * `read_data`
 * `prepare_features`
-* `train_model`
+* `train_model` -- correct answer
 * `run_model`
 
 Important: change all `print` statements to use the Prefect logger. Using the `print` statement will not appear in the Prefect UI. You have to call `get_run_logger` at the start of the task to use it.
@@ -115,7 +115,7 @@ Note you need to download the relevant files to run. Part of this question is un
 
 The valition MSE is:
 
-* 11.637
+* 11.637 -- correct
 * 11.837
 * 12.037
 * 12.237
@@ -137,7 +137,7 @@ We could do something like `sorted(model_list, reverse=False)[0]` to get the fil
 
 What is the file size of the `DictVectorizer` that we trained when the `date` is 2021-08-15?
 
-* 13,000 bytes 
+* 13,000 bytes  -- correct
 * 23,000 bytes 
 * 33,000 bytes 
 * 43,000 bytes 
@@ -161,8 +161,8 @@ For this exercise, use a `CronSchedule` when creating a Prefect deployment.
 What is the Cron expression to run a flow at 9 AM every 15th of the month?
 
 * `* * 15 9 0`
-* `9 15 * * *`
-* `0 9 15 * *`
+* `9 15 * * *` 
+* `0 9 15 * *`-- this
 * `0 15 9 1 *`
 
 Hint: there are many Cron to English tools. Try looking for one to help you.

@@ -193,8 +193,8 @@ For example,
 
 What is the command to view the available work-queues?
 
-* `prefect work-queue inspect`
-* `prefect work-queue ls`
+* `prefect work-queue inspect` 
+* `prefect work-queue ls` -- this
 * `prefect work-queue preview`
 * `prefect work-queue list`
 
